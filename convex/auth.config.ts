@@ -1,7 +1,7 @@
 const authConfig= {
     providers: [
         {
-            domain: "https://active-sloth-79.clerk.accounts.dev",
+            domain: "https://capital-mackerel-2.clerk.accounts.dev",
             applicationID: "convex",
         },
     ]
