@@ -11,6 +11,11 @@ export const sidebarLinks = [
     label: "Discover",
   },
   {
+    imgURL: "/icons/map.svg",
+    route: "/explore",
+    label: "Explore",
+  },
+  {
     imgURL: "/icons/microphone.svg",
     route: "/create-podcast",
     label: "Create Posts",

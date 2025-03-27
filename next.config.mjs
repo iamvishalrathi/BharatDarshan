@@ -19,12 +19,20 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
-                hostname: 'amiable-ladybug-321.convex.cloud'
+                hostname: 'img.clerk.com'
             },
             {
                 protocol: 'https',
-                hostname: 'img.clerk.com'
+                hostname: 'api.mapbox.com'
             },
+            {
+                protocol: 'https',
+                hostname: 'maps.googleapis.com'
+            },
+            {
+                protocol: 'https',
+                hostname: '*.tile.openstreetmap.org'
+            }
         ]
     }
 };
