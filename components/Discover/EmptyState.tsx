@@ -14,13 +14,13 @@ const EmptyState = ({ search, selectedCategories, selectedLanguages, clearAllFil
       <div className="bg-white-1/10 p-6 rounded-full mb-5 shadow-inner">
         <RefreshCw size={32} className="text-orange-1" />
       </div>
-      <h3 className="text-2xl font-bold text-white-1 mb-3">No podcasts found</h3>
+      <h3 className="text-2xl font-bold text-white-1 mb-3">No places found</h3>
       <p className="text-white-2 text-center max-w-md mb-8 px-4">
         {selectedCategories.length > 0 || selectedLanguages.length > 0
-          ? "No podcasts match your selected filters. Try different options or clear filters."
+          ? "No posts match your selected filters. Try different options or clear filters."
           : search
-            ? `We couldn't find any podcasts matching "${search}". Try a different search term.`
-            : "We couldn't find any podcasts. Try a different filter or check back later."}
+            ? `We couldn't find any posts matching "${search}". Try a different search term.`
+            : "We couldn't find any posts. Try a different filter or check back later."}
       </p>
       <button
         onClick={() => {

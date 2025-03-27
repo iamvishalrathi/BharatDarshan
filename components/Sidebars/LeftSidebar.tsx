@@ -26,8 +26,8 @@ const LeftSidebar = () => {
                         <Image
                             src="/icons/logo.png"
                             alt="logo"
-                            width={80}
-                            height={80}
+                            width={200}
+                            height={200}
                             className="transition-transform duration-300 group-hover:scale-110"
                         />
                     </div>

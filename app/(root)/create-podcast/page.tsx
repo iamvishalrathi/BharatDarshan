@@ -84,7 +84,7 @@ const CreatePodcast = () => {
             // Check all required fields with specific messages
             if (!data.podcastTitle.trim()) {
                 toast({
-                    title: 'Podcast title is required',
+                    title: 'Post title is required',
                     variant: 'destructive'
                 });
                 setIsSubmitting(false);
@@ -93,7 +93,7 @@ const CreatePodcast = () => {
 
             if (!data.podcastType) {
                 toast({
-                    title: 'Please select a podcast type',
+                    title: 'Please select a post type',
                     variant: 'destructive'
                 });
                 setIsSubmitting(false);
@@ -102,7 +102,7 @@ const CreatePodcast = () => {
 
             if (!data.podcastDescription.trim()) {
                 toast({
-                    title: 'Podcast description is required',
+                    title: 'Post description is required',
                     variant: 'destructive'
                 });
                 setIsSubmitting(false);
@@ -112,7 +112,7 @@ const CreatePodcast = () => {
             // Check if audio is required
             if (!audioUrl || !audioStorageId) {
                 toast({
-                    title: 'Please generate audio for your podcast',
+                    title: 'Please generate audio for your post',
                     variant: 'destructive'
                 });
                 setIsSubmitting(false);
@@ -151,15 +151,15 @@ const CreatePodcast = () => {
             // Add a delay before showing the success toast
             setTimeout(() => {
                 toast({
-                    title: 'Podcast created successfully',
-                    description: 'Your podcast has been published'
+                    title: 'Post created successfully',
+                    description: 'Your post has been published'
                 });
             }, 1500); // 1.5 second delay
 
         } catch (error) {
-            console.error('Error creating podcast:', error);
+            // console.error('Error creating podcast:', error);
             toast({
-                title: 'Error creating podcast',
+                title: 'Error creating post',
                 description: error instanceof Error ? error.message : 'Something went wrong',
                 variant: 'destructive'
             });
@@ -179,7 +179,7 @@ const CreatePodcast = () => {
 
         if (!form.getValues("podcastType")) {
             toast({
-                title: 'Please select a podcast type first',
+                title: 'Please select a posts type first',
                 variant: 'destructive'
             });
             return;
@@ -260,9 +260,9 @@ const CreatePodcast = () => {
             <div className="space-y-10">
                 {/* Header */}
                 <div className="space-y-2">
-                    <h1 className="text-3xl font-bold text-white-1">Create New Podcast</h1>
+                    <h1 className="text-3xl font-bold text-white-1">Create New Post</h1>
                     <p className="text-gray-1 text-sm">
-                        Fill in the details below to create your podcast. Use AI to generate content or write your own.
+                        Fill in the details below to create your posts. Use AI to generate content or write your own.
                     </p>
                 </div>
 
@@ -276,10 +276,10 @@ const CreatePodcast = () => {
                                         control={form.control}
                                         name="podcastTitle"
                                         render={({ field }) => (
-                                            <FormFieldWrapper label="Podcast Title">
+                                            <FormFieldWrapper label="Post Title">
                                                 <Input
                                                     className="input-class focus-visible:ring-offset-orange-1 h-12"
-                                                    placeholder="Enter your podcast title..."
+                                                    placeholder="Enter your post title..."
                                                     suppressHydrationWarning
                                                     {...field}
                                                     onKeyDown={(e) => {
@@ -297,7 +297,7 @@ const CreatePodcast = () => {
                                         control={form.control}
                                         name="podcastType"
                                         render={({ field }) => (
-                                            <FormFieldWrapper label="Podcast Type">
+                                            <FormFieldWrapper label="Post Type">
                                                 <Select
                                                     onValueChange={field.onChange}
                                                     defaultValue={field.value}
@@ -305,7 +305,7 @@ const CreatePodcast = () => {
                                                     <SelectTrigger
                                                         className="input-class focus-visible:ring-offset-orange-1 h-12"
                                                     >
-                                                        <SelectValue placeholder="Select a podcast type" />
+                                                        <SelectValue placeholder="Select a post type" />
                                                     </SelectTrigger>
                                                     <SelectContent className="bg-black-1/95 text-white-1 border-orange-1/10 rounded-xl">
                                                         {podcastTypes.map((option) => (
@@ -353,10 +353,10 @@ const CreatePodcast = () => {
                                         control={form.control}
                                         name="podcastDescription"
                                         render={({ field }) => (
-                                            <FormFieldWrapper label="Podcast Description">
+                                            <FormFieldWrapper label="Post Description">
                                                 <Textarea
                                                     className="input-class min-h-[120px]"
-                                                    placeholder="Write or generate a compelling description for your podcast..."
+                                                    placeholder="Write or generate a compelling description for your post..."
                                                     suppressHydrationWarning
                                                     {...field}
                                                     onKeyDown={(e) => {
@@ -426,12 +426,12 @@ const CreatePodcast = () => {
                                 >
                                     {isSubmitting ? (
                                         <>
-                                            Publishing Podcast
+                                            Publishing Post
                                             <Loader size={20} className="animate-spin" />
                                         </>
                                     ) : (
                                         <>
-                                            Publish Podcast
+                                            Publish Post
                                             <Podcast size={20} className="animate-bounce" />
                                         </>
                                     )}

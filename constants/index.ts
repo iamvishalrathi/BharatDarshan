@@ -13,7 +13,7 @@ export const sidebarLinks = [
   {
     imgURL: "/icons/microphone.svg",
     route: "/create-podcast",
-    label: "Create Podcast",
+    label: "Create Posts",
   },
   {
     imgURL: "/icons/bell.svg",

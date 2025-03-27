@@ -32,7 +32,7 @@ const FilterControls = ({
         <div className="bg-gradient-to-br from-white-1/10 to-white-1/5 backdrop-blur-sm p-5 rounded-xl border border-white-1/10 shadow-lg">
             <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
                 <h2 className="text-2xl font-bold text-white-1 flex items-center">
-                    {!search ? 'Browse Community Podcasts' : 'Search results for '}
+                    {!search ? 'Browse Community Posts' : 'Search results for '}
                     {search && <span className="text-orange-1 ml-1 bg-orange-1/10 px-3 py-1 rounded-lg">{search}</span>}
                 </h2>
                 <div className="flex flex-wrap items-center gap-3">

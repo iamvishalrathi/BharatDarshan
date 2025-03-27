@@ -7,7 +7,7 @@ const DiscoverHeader = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-orange-1/10 to-transparent opacity-50"></div>
             <div className="relative z-10">
                 <h1 className="text-3xl font-bold text-white-1 mb-5 flex items-center gap-2">
-                    Discover Podcasts
+                    Discover Places
                 </h1>
                 <Searchbar />
             </div>
