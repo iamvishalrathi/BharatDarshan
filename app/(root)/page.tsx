@@ -19,7 +19,7 @@ const Home = () => {
 
       {/* Trending */}
       <PodcastSection
-        title="Trending Podcasts"
+        title="Trending Places"
         icon={<TrendingUp size={28} className="text-orange-1" />}
         podcasts={trendingPodcasts}
         filterType="trending"
@@ -27,7 +27,7 @@ const Home = () => {
 
       {/* Top Rated */}
       <PodcastSection
-        title="Top Rated Podcasts"
+        title="Top Rated Places"
         icon={<Star size={28} className="text-orange-1" />}
         podcasts={topRatedPodcasts}
         filterType="topRated"

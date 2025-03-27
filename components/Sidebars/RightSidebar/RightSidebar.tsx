@@ -105,7 +105,7 @@ const RightSidebar = () => {
 
             {/* Top Podcasters Section */}
             <section className="flex flex-col gap-2">
-                <Header headerTitle="Top Podcasters" />
+                <Header headerTitle="Top Explorers" />
                 {isLoading ? (
                     <div className="flex flex-col">
                         {[1, 2, 3].map((i) => (

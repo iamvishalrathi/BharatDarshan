@@ -13,6 +13,10 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^5.5.2",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/interaction": "^6.1.15",
+    "@fullcalendar/react": "^6.1.15",
+    "@fullcalendar/timegrid": "^6.1.15",
     "@google/generative-ai": "^0.21.0",
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-dialog": "^1.1.6",
@@ -34,6 +38,7 @@
     "embla-carousel": "^8.3.0",
     "embla-carousel-autoplay": "^8.3.0",
     "embla-carousel-react": "^8.5.2",
+    "googleapis": "^148.0.0",
     "lucide-react": "^0.439.0",
     "next": "14.2.9",
     "openai": "^4.61.0",

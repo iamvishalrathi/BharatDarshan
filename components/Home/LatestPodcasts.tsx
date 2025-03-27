@@ -16,7 +16,7 @@ const LatestPodcasts = ({ latestPodcasts }: LatestPodcastsProps) => {
                     <div className="bg-orange-1/10 p-3 rounded-xl">
                         <Clock size={28} className="text-orange-1" />
                     </div>
-                    <h1 className="text-2xl font-bold text-white-1">Latest Podcasts</h1>
+                    <h1 className="text-2xl font-bold text-white-1">Latest Places</h1>
                 </div>
                 <Link
                     href="/discover?filter=latest"

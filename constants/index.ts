@@ -1,3 +1,4 @@
+// Add this to your existing sidebarLinks array
 export const sidebarLinks = [
   {
     imgURL: "/icons/home.svg",
@@ -28,5 +29,10 @@ export const sidebarLinks = [
     imgURL: "/icons/profile.svg",
     route: "/profile",
     label: "My Profile",
+  },
+  {
+    imgURL: "/icons/calendar.svg",
+    route: "/calendar",
+    label: "Calendar",
   },
 ];
